@@ -26,6 +26,10 @@ export class NewTrailerComponent implements OnInit {
         console.log(data);
       });
   }
+
+  get trailer_number(){ return this.TrailerForm.get('trailer_number');}
+  get trailer_statuses_id(){ return this.TrailerForm.get('trailer_statuses_id');}
+
   ngOnInit() {
   }
 

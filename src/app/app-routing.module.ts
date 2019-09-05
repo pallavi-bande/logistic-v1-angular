@@ -7,6 +7,8 @@ import { ViewLocationComponent } from './main-sidebar/sidebar/location/location-
 import { ContentHeaderComponent } from './content-header/content-header.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { AddUserComponent } from './user/add-user/add-user.component';
+import { NewTrailerComponent } from './trailer/new-trailer/new-trailer.component';
+import { TrailerlistComponent } from './trailer/trailerlist/trailerlist.component';
 
 const routes: Routes = [
   { path: '', component: ContentHeaderComponent },
@@ -14,8 +16,10 @@ const routes: Routes = [
   { path: 'LocationList', component: LocationListComponent },
   { path: 'LocationList/edit/:locationId', component: EditLocationComponent },
   { path: 'LocationList/view/:locationId', component: ViewLocationComponent },
-  { path: 'userlist', component: UserListComponent},
-  { path: 'adduser', component:AddUserComponent}
+  { path: 'UserList', component: UserListComponent},
+  { path: 'NewUser', component:AddUserComponent},
+  { path: 'NewTrailer', component:NewTrailerComponent},
+  { path: 'TrailerList', component: TrailerlistComponent},
 ];
 
 @NgModule({

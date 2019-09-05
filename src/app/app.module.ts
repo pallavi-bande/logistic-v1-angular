@@ -23,6 +23,7 @@ import { LocationComponent } from './main-sidebar/sidebar/location/location.comp
 import { NewTrailerComponent } from './trailer/new-trailer/new-trailer.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import{ AddUserComponent } from './user/add-user/add-user.component';
+import { TrailerlistComponent } from './trailer/trailerlist/trailerlist.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import{ AddUserComponent } from './user/add-user/add-user.component';
     AddUserComponent,
     ContentHeaderComponent,
     LocationComponent,
-    NewTrailerComponent
+    NewTrailerComponent,
+    TrailerlistComponent
   ],
   imports: [
     BrowserModule,
