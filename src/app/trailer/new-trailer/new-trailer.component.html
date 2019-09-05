@@ -1,0 +1,33 @@
+<div class="box box-primary">
+    <div class="box-header with-border">
+      <h3 class="box-title">New Trailer</h3>
+    </div>
+    <div class="box-body">
+      <form method="post" [formGroup]="TrailerForm">
+       
+        <div class="form-group">
+          <label>
+            Trailer Number:</label>
+          <input class="form-control" type="text" formControlName="trailer_number" required>
+          <div *ngIf="trailer_number.invalid && (trailer_number.dirty || trailer_number.touched)" class="alert alert-danger">
+  
+            <div *ngIf="trailer_number.errors.required">
+                trailer_number is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>
+            Trailer Statues Id:</label>
+          <input class="form-control" formControlName="trailer_statuses_id" required >
+          <div *ngIf="trailer_statuses_id.invalid && (trailer_statuses_id.dirty || trailer_statuses_id.touched)" class="alert alert-danger">
+  
+            <div *ngIf="trailer_statuses_id.errors.required">
+                trailer_statuses_id is required.
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
+      </form>
+    </div>
+  </div>  

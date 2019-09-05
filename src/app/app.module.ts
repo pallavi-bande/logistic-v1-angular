@@ -20,6 +20,9 @@ import { ReplaceUnderscorePipe } from './replace-underscore.pipe';
 import { ContentWrapperComponent } from './content-wrapper/content-wrapper.component';
 import { ContentHeaderComponent } from './content-header/content-header.component';
 import { LocationComponent } from './main-sidebar/sidebar/location/location.component';
+import { NewTrailerComponent } from './trailer/new-trailer/new-trailer.component';
+import { UserListComponent } from './user/user-list/user-list.component';
+import{ AddUserComponent } from './user/add-user/add-user.component';
 
 @NgModule({
   declarations: [
@@ -36,8 +39,11 @@ import { LocationComponent } from './main-sidebar/sidebar/location/location.comp
     PipeTransformPipe,
     ReplaceUnderscorePipe,
     ContentWrapperComponent,
+    UserListComponent,
+    AddUserComponent,
     ContentHeaderComponent,
-    LocationComponent
+    LocationComponent,
+    NewTrailerComponent
   ],
   imports: [
     BrowserModule,
