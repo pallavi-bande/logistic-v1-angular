@@ -47,9 +47,9 @@
                                 <td>{{user.last_name}}</td>
                                 <td>{{user.email}}</td>
                                 <td>{{user.mobile}}</td>
-                                <td><a  [routerLink]="['/UserList', user.id]" >Edit</a> / 
-                                    <a  [routerLink]="['/UserList/view', user.id]" >View</a> / 
-                                    <a  [routerLink]="['/UserList/delete', user.id]" >Delete</a></td>
+                                <td><a  [routerLink]="['/UserList', user.id]" ><i class="fa fa-eye" ></i></a> / 
+                                    <a  [routerLink]="['/UserList/view', user.id]" ><i class="fa fa-edit"></i></a> / 
+                                    <a  [routerLink]="['/UserList/delete', user.id]" ><i class="fa fa-trash" ></i></a></td>
                             </tr>
                         </tbody>
                     </table>
